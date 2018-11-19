@@ -2,7 +2,7 @@
 title: Le Wagon - Middleman
 ---
 
-<div id="home">
+<!-- <div id="home">
   <div class="home-content">
     <%= image_tag "logo.png", width: "200" %>
     <p>
@@ -12,4 +12,24 @@ title: Le Wagon - Middleman
       <%= link_to "More about this template", "about.html" %>
     </p>
   </div>
+</div> -->
+
+<%= partial 'layouts/banner'  %>
+
+<div class="container">
+  <div class="text-center">
+    <%= link_to 'about', 'about.html', class: "btn btn-danger btn-lg"  %>
+  </div>
+  <div class="row">
+    <% data.users.each do |user| %>
+    <div class="col-xs-12 col-sm-4 col-md-3">
+      <!-- <div class="card">
+        <h2><%= user.name %></h2>
+        <p><%= user.github_nickname %></p>
+      </div> -->
+      <%= partial 'layouts/card' %>
+    </div>
+    <% end %>
+  </div>
 </div>
+
