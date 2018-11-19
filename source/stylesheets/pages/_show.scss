@@ -1,0 +1,41 @@
+.header-details {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+  p {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  .owner {
+    img {
+      width: 80px;
+    }
+  }
+
+  .flat {
+    h2 {
+      font-size: 18px;
+    }
+  }
+}
+
+.flat-info {
+  h2{
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.flat-characteristics {
+
+  p {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  margin: 10px;
+}

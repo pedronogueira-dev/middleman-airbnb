@@ -1,0 +1,15 @@
+.header-details {
+  display:flex;
+  justify-content: space-around;
+
+  p {
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  owner {
+
+    img {
+      width: 80px;
+    }
+  }
+}
