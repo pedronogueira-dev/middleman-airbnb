@@ -17,19 +17,10 @@ title: Le Wagon - Middleman
 <%= partial 'layouts/banner'  %>
 
 <div class="container">
-  <div class="text-center">
-    <%= link_to 'about', 'about.html', class: "btn btn-danger btn-lg"  %>
-  </div>
   <div class="row">
-    <% data.users.each do |user| %>
-    <div class="col-xs-12 col-sm-4 col-md-3">
-      <!-- <div class="card">
-        <h2><%= user.name %></h2>
-        <p><%= user.github_nickname %></p>
-      </div> -->
+    <div class="col-xs-12 col-sm-6 col-md-4">
       <%= partial 'layouts/card' %>
     </div>
-    <% end %>
   </div>
 </div>
 
